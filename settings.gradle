@@ -1,0 +1,2 @@
+rootProject.name='SW5e companion'
+include ':app'
