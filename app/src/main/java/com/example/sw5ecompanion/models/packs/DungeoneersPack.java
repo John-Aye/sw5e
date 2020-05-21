@@ -1,46 +1,49 @@
 package com.example.sw5ecompanion.models.packs;
 
+
+
 import com.example.sw5ecompanion.models.equipment.Equipment;
+import com.example.sw5ecompanion.models.equipment.datarecording.Datapad;
 import com.example.sw5ecompanion.models.equipment.storage.Backpack;
 import com.example.sw5ecompanion.models.equipment.storage.Canteen;
-import com.example.sw5ecompanion.models.equipment.utilities.Chronometer;
+import com.example.sw5ecompanion.models.equipment.utilities.Fibercord;
 import com.example.sw5ecompanion.models.equipment.utilities.FieldRations;
 import com.example.sw5ecompanion.models.equipment.utilities.FusionCutter;
 import com.example.sw5ecompanion.models.equipment.utilities.GlowRod;
 import com.example.sw5ecompanion.models.equipment.utilities.GrapplingHook;
-import com.example.sw5ecompanion.models.equipment.utilities.Hydrospanner;
 
 import java.util.ArrayList;
 
-public class BurglersPack extends Pack {
+public class DungeoneersPack extends Pack {
 
-    public BurglersPack() {
+    public DungeoneersPack() {
 
-        super();
-        this.setDescription("Includes a backpack, two glow rods, a hydrospanner, a fusion cutter," +
-                " a chronometer, a grappling hook, 5 days of field rations, and a canteen");
-        this.setCost(290);
-        Backpack backpack = new Backpack();
+
+        this.setCost(320);
+        this.setDescription("Includes a backpack, 5 glow rods, a fusion cutter, a grappling hook, " +
+                "a chronometer, 10 days of field rations, a canteen and 50 feet of fibercord.");
+
+        Backpack pack = new Backpack();
         GlowRod rods = new GlowRod();
-        Hydrospanner spanner = new Hydrospanner();
         FusionCutter cutter = new FusionCutter();
-        Chronometer meter = new Chronometer();
+        Datapad pad = new Datapad();
         GrapplingHook hook = new GrapplingHook();
+        Fibercord cord = new Fibercord();
         FieldRations rations = new FieldRations();
         Canteen canteen = new Canteen();
 
-        rods.setQuantity(2);
-        rations.setQuantity(5);
+        rods.setQuantity(5);
+        rations.setQuantity(10);
 
         ArrayList<Equipment> equip = new ArrayList<Equipment>();
-        equip.add(backpack);
+        equip.add(pack);
         equip.add(rods);
-        equip.add(spanner);
+        equip.add(pad);
         equip.add(cutter);
-        equip.add(meter);
-        equip.add(hook);
         equip.add(rations);
+        equip.add(cord);
         equip.add(canteen);
+        equip.add(hook);
 
         this.setEquipment(equip);
     }
