@@ -2,7 +2,7 @@ package com.example.sw5ecompanion.models.equipment.clothing;
 
 public class ClothesCostume extends Clothing {
 
-    ClothesCostume() {
+    public ClothesCostume() {
 
         super();
         this.setName("Clothes, costume");

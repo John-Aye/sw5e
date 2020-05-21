@@ -1,44 +1,45 @@
 package com.example.sw5ecompanion.models.packs;
 
 import com.example.sw5ecompanion.models.equipment.Equipment;
-import com.example.sw5ecompanion.models.equipment.clothing.ClothesCostume;
-import com.example.sw5ecompanion.models.equipment.specialist.DisguiseKit;
+import com.example.sw5ecompanion.models.equipment.communication.Commlink;
+import com.example.sw5ecompanion.models.equipment.datarecording.Datapad;
+import com.example.sw5ecompanion.models.equipment.lifesupport.Respirator;
 import com.example.sw5ecompanion.models.equipment.storage.Backpack;
 import com.example.sw5ecompanion.models.equipment.storage.Canteen;
 import com.example.sw5ecompanion.models.equipment.utilities.Bedroll;
+import com.example.sw5ecompanion.models.equipment.utilities.Chronometer;
 import com.example.sw5ecompanion.models.equipment.utilities.FieldRations;
-import com.example.sw5ecompanion.models.equipment.utilities.GlowRod;
 
 import java.util.ArrayList;
 
-public class EntertainersPack extends Pack {
+public class TechnologistsPack extends Pack {
 
-    public EntertainersPack() {
+    public TechnologistsPack() {
 
         super();
-        this.setCost(420);
-        this.setDescription("Includes a backpack, a bedroll, two costumes, two glow rods, 5 days " +
-                "of field rations, a canteen, and a disguise kit");
+        this.setCost(670);
+        this.setDescription("Includes a backpack, chronometer, respirator, datapad, holocom, " +
+                "commlink, bedroll, canteen, and 5 days of field rations");
         Backpack pack = new Backpack();
         Bedroll bed = new Bedroll();
-        ClothesCostume costume = new ClothesCostume();
-        GlowRod rods = new GlowRod();
+        Chronometer meter = new Chronometer();
+        Respirator respirator = new Respirator();
         FieldRations rations = new FieldRations();
         Canteen canteen = new Canteen();
-        DisguiseKit kit = new DisguiseKit();
+        Commlink comm = new Commlink();
+        Datapad pad = new Datapad();
 
-        costume.setQuantity(2);
-        rods.setQuantity(2);
         rations.setQuantity(5);
 
         ArrayList<Equipment> equip = new ArrayList<Equipment>();
         equip.add(bed);
-        equip.add(costume);
-        equip.add(rods);
+        equip.add(meter);
+        equip.add(respirator);
         equip.add(rations);
         equip.add(canteen);
-        equip.add(kit);
+        equip.add(comm);
         equip.add(pack);
+        equip.add(pad);
 
         this.setEquipment(equip);
     }
