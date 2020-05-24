@@ -10,14 +10,24 @@ public abstract class Species {
     private Map<String, Integer> abilityScoreAdjustments;
 
     private int age;
+    private int maxAge;
+    private int minAge;
 
     private String alignment;
 
     private String size;
+
     private double height;
+    private double maxHeight;
+    private double minHeight;
+
     private double weight;
+    private double maxWeight;
+    private double minWeight;
 
     private int speed;
+    private int maxSpeed;
+    private int minSpeed;
 
     private String[] languages;
 
@@ -38,12 +48,12 @@ public abstract class Species {
         this.firstName = firstName;
         this.lastName = lastName;
         this.abilityScoreAdjustments = abilityScoreAdjustments;
-        this.age = age;
+        setAge(age);
         this.alignment = alignment;
         this.size = size;
-        this.height = height;
-        this.weight = weight;
-        this.speed = speed;
+        setHeight(height);
+        setWeight(weight);
+        setSpeed(speed);
         this.languages = languages;
         this.skinColor = skinColor;
         this.hairColor = hairColor;
@@ -82,7 +92,13 @@ public abstract class Species {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > maxAge) {
+            this.age = maxAge;
+        } else if (age < minAge) {
+            this.age = minAge;
+        } else {
+            this.age = age;
+        }
     }
 
     public String getAlignment() {
@@ -106,7 +122,13 @@ public abstract class Species {
     }
 
     public void setHeight(double height) {
-        this.height = height;
+        if (height > maxHeight) {
+            this.height = maxHeight;
+        } else if (height < minHeight) {
+            this.height = minHeight;
+        } else {
+            this.height = height;
+        }
     }
 
     public double getWeight() {
@@ -114,7 +136,13 @@ public abstract class Species {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+        if (weight > maxWeight) {
+            this.weight = maxWeight;
+        } else if (weight < minWeight) {
+            this.weight = minWeight;
+        } else {
+            this.weight = weight;
+        }
     }
 
     public int getSpeed() {
@@ -122,7 +150,13 @@ public abstract class Species {
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+        if (speed > maxSpeed) {
+            this.speed = maxSpeed;
+        } else if (speed < minSpeed) {
+            this.speed = minSpeed;
+        } else {
+            this.speed = speed;
+        }
     }
 
     public String[] getLanguages() {
