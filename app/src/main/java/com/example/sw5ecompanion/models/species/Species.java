@@ -44,16 +44,23 @@ public abstract class Species {
     public Species() {
     }
 
-    public Species(String firstName, String lastName, Map<String, Integer> abilityScoreAdjustments, int age, String alignment, String size, double height, double weight, int speed, String[] languages, String skinColor, String hairColor, String eyeColor, String[] distinctions, String world, String description) {
+    public Species(String firstName, String lastName, Map<String, Integer> abilityScoreAdjustments, int age, int maxAge, int minAge, String alignment, String size, double height, double maxHeight, double minHeight, double weight, double maxWeight, double minWeight, int speed, int maxSpeed, int minSpeed, String[] languages, String skinColor, String hairColor, String eyeColor, String[] distinctions, String world, String description) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.abilityScoreAdjustments = abilityScoreAdjustments;
-        setAge(age);
+        this.maxAge = maxAge;
+        this.minAge = minAge;
         this.alignment = alignment;
         this.size = size;
-        setHeight(height);
-        setWeight(weight);
-        setSpeed(speed);
+        this.height = height;
+        this.maxHeight = maxHeight;
+        this.minHeight = minHeight;
+        this.weight = weight;
+        this.maxWeight = maxWeight;
+        this.minWeight = minWeight;
+        this.speed = speed;
+        this.maxSpeed = maxSpeed;
+        this.minSpeed = minSpeed;
         this.languages = languages;
         this.skinColor = skinColor;
         this.hairColor = hairColor;
@@ -61,6 +68,74 @@ public abstract class Species {
         this.distinctions = distinctions;
         this.world = world;
         this.description = description;
+        setAge(age);
+        setHeight(height);
+        setWeight(weight);
+        setSpeed(speed);
+    }
+
+    public int getMaxAge() {
+        return maxAge;
+    }
+
+    public void setMaxAge(int maxAge) {
+        this.maxAge = maxAge;
+    }
+
+    public int getMinAge() {
+        return minAge;
+    }
+
+    public void setMinAge(int minAge) {
+        this.minAge = minAge;
+    }
+
+    public double getMaxHeight() {
+        return maxHeight;
+    }
+
+    public void setMaxHeight(double maxHeight) {
+        this.maxHeight = maxHeight;
+    }
+
+    public double getMinHeight() {
+        return minHeight;
+    }
+
+    public void setMinHeight(double minHeight) {
+        this.minHeight = minHeight;
+    }
+
+    public double getMaxWeight() {
+        return maxWeight;
+    }
+
+    public void setMaxWeight(double maxWeight) {
+        this.maxWeight = maxWeight;
+    }
+
+    public double getMinWeight() {
+        return minWeight;
+    }
+
+    public void setMinWeight(double minWeight) {
+        this.minWeight = minWeight;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getMinSpeed() {
+        return minSpeed;
+    }
+
+    public void setMinSpeed(int minSpeed) {
+        this.minSpeed = minSpeed;
     }
 
     public String getFirstName() {
