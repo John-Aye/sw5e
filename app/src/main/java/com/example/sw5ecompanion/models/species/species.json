@@ -1,0 +1,45 @@
+[
+  {
+    "species" : "Bith",
+    "skin" : [
+      "Green",
+      "Pink",
+      "White",
+      "Yellow"
+    ],
+    "hair" : [
+      "None"
+    ],
+    "eye" : [
+      "Black"
+    ],
+    "distinctions" : [
+      "Large cranium",
+      "Detail Oriented. You are practiced at scouring for details. You have advantage on Intelligence (Investigation) checks within 5 feet.",
+      "Keen Hearing and Smell. You have advantage on Wisdom (Perception) checks that involve hearing or smell.",
+      "Musician. You are proficient in one musical instrument of your choice.",
+      "Programmer. Whenever you make an Intelligence (Technology) check related to computers, you are considered to have expertise in the Technology skill."
+    ],
+    "maxHeight" : 57,
+    "minHeight" : 69,
+    "maxWeight" : 200,
+    "minWeight" : 800,
+    "maxAge" : 100,
+    "minAge" :12,
+    "maxSpeed" : 60,
+    "minSpeed" : 30,
+    "size" : "Medium",
+    "world" : "Clak'dor VII",
+    "languages" : [
+      "Bith",
+      "Basic"
+    ],
+    "strength" : 0,
+    "Charisma" : 0,
+    "Intelligence" : 2,
+    "Wisdom" : 0,
+    "Constitution" : 0,
+    "Dexterity" : 1
+  }
+]
+
