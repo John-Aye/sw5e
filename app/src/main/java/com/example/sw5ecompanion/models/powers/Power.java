@@ -1,6 +1,6 @@
 package com.example.sw5ecompanion.models.powers;
 
-public abstract class Power{
+public class Power{
 
     private int lvl;
     private String name;
