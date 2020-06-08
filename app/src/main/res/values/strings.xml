@@ -1,3 +1,217 @@
 <resources>
     <string name="app_name">SW5e companion</string>
+    <string name="char_info">Character Information</string>
+    <string name="name">Name</string>
+    <string name="race">Species</string>
+    <string name="char_class">Class</string>
+    <string name="backgound">Background</string>
+    <string name="feat">Feat</string>
+    <string name="manual">Manual Entry</string>
+    <string name="point">Point Buy</string>
+    <string name="random">Random Roll</string>
+    <string name="cont_stat">Continue to Stats</string>
+    <string name="strength">Strength</string>
+    <string name="dexterity">Dexterity</string>
+    <string name="constitution">Constitution</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="wisdom">Wisdom</string>
+    <string name="charisma">Charisma</string>
+    <string name="stat">Stats</string>
+    <string name="create">Create Character</string>
+    <string-array name="classes">
+        <item>Berserker</item>
+        <item>Consular</item>
+        <item>Engineer</item>
+        <item>Fighter</item>
+        <item>Guardian</item>
+        <item>Monk</item>
+        <item>Operative</item>
+        <item>Scholar</item>
+        <item>Scout</item>
+        <item>Sentinel</item>
+    </string-array>
+    <string-array name="species">
+        <item>Bith</item>
+        <item>Bothan</item>
+        <item>Chiss</item>
+        <item>Duros</item>
+        <item>Human</item>
+        <item>Jawa</item>
+        <item>Kel Dor</item>
+        <item>Mon Calamari</item>
+        <item>Rodian</item>
+        <item>Sith Pureblood</item>
+        <item>Togruta</item>
+        <item>Trandoshan</item>
+        <item>Twi\'lek</item>
+        <item>Wookie</item>
+        <item>Zabrak</item>
+    </string-array>
+    <string-array name="backgrounds">
+        <item>Agent</item>
+        <item>Bounty Hunter</item>
+        <item>Criminal</item>
+        <item>Entertainer</item>
+        <item>Gambler</item>
+        <item>Jedi</item>
+        <item>Mandalorian</item>
+        <item>Mercenary</item>
+        <item>Noble</item>
+        <item>Scientist</item>
+        <item>Scoundrel</item>
+        <item>Sith</item>
+        <item>Smuggler</item>
+        <item>Soldier</item>
+        <item>Spacer</item>
+    </string-array>
+    <string-array name="agent">
+        <item>Silver-Tongued</item>
+        <item>Investigator</item>
+        <item>Loremaster</item>
+        <item>Charmer</item>
+        <item>Linguist</item>
+        <item>Alert</item>
+        <item>Observant</item>
+        <item>Practiced</item>
+    </string-array>
+    <string-array name="bounty_hunter">
+        <item>Silver-Tongued</item>
+        <item>Empathic</item>
+        <item>Charmer</item>
+        <item>Stealthy</item>
+        <item>Demolitionist</item>
+        <item>Bypasser</item>
+        <item>Slicer</item>
+        <item>Linguist</item>
+    </string-array>
+    <string-array name="criminal">
+        <item>Silver-Tongued</item>
+        <item>Threatening</item>
+        <item>Quick-Fingered</item>
+        <item>Stealthy</item>
+        <item>Entertainer</item>
+        <item>Demolitionist</item>
+        <item>Bypasser</item>
+        <item>Slicer</item>
+    </string-array>
+    <string-array name="entertainer">
+        <item>Acrobat</item>
+        <item>Empathic</item>
+        <item>Performer</item>
+        <item>Quick-Fingered</item>
+        <item>Master of Disguise</item>
+        <item>Entertainer</item>
+        <item>Practiced</item>
+        <item>Actor</item>
+    </string-array>
+    <string-array name="gambler">
+        <item>Silver-Tongued</item>
+        <item>Empathic</item>
+        <item>Threatening</item>
+        <item>Quick-Fingered</item>
+        <item>Entertainer</item>
+        <item>Keen Mind</item>
+        <item>Observant</item>
+        <item>Practiced</item>
+    </string-array>
+    <string-array name="jedi">
+        <item>Empathic</item>
+        <item>Investigator</item>
+        <item>Loremaster</item>
+        <item>Charmer</item>
+        <item>Linguist</item>
+        <item>Crafter</item>
+        <item>Healer</item>
+        <item>Force Sensitive</item>
+    </string-array>
+    <string-array name="mandalorian">
+        <item>Brawny</item>
+        <item>Threatening</item>
+        <item>Ace Pilot</item>
+        <item>Survivalist</item>
+        <item>Crafter</item>
+        <item>Durable</item>
+        <item>Weapon Expert</item>
+        <item>Athlete</item>
+    </string-array>
+    <string-array name="mercenary">
+        <item>Brawny</item>
+        <item>Investigator</item>
+        <item>Charmer</item>
+        <item>Ace Pilot</item>
+        <item>Entertainer</item>
+        <item>Linguist</item>
+        <item>Weapon Expert</item>
+        <item>Durable</item>
+    </string-array>
+    <string-array name="noble">
+        <item>Silver-Tongued</item>
+        <item>Empathic</item>
+        <item>Loremaster</item>
+        <item>Charmer</item>
+        <item>Entertainer</item>
+        <item>Linguist</item>
+        <item>Inspiring Leader</item>
+        <item>Observant</item>
+    </string-array>
+    <string-array name="scientist">
+        <item>Loremaster</item>
+        <item>Medic</item>
+        <item>Naturalist</item>
+        <item>Techie</item>
+        <item>Crafter</item>
+        <item>Linguist</item>
+        <item>Tech Dabbler</item>
+        <item>Keen Mind</item>
+    </string-array>
+    <string-array name="scoundrel">
+        <item>Silver-Tongued</item>
+        <item>Empathic</item>
+        <item>Performer</item>
+        <item>Quick-Fingered</item>
+        <item>Master of Disguise</item>
+        <item>Force of Personality</item>
+        <item>Snappy Interjection</item>
+        <item>Actor</item>
+    </string-array>
+    <string-array name="sith">
+        <item>Silver-Tongued</item>
+        <item>Empathic</item>
+        <item>Threatening</item>
+        <item>Loremaster</item>
+        <item>Linguist</item>
+        <item>Crafter</item>
+        <item>Force of Personality</item>
+        <item>Force Sensitive</item>
+    </string-array>
+    <string-array name="smuggler">
+        <item>Silver-Tongued</item>
+        <item>Ace Pilot</item>
+        <item>Quick-Fingered</item>
+        <item>Stealthy</item>
+        <item>Entertainer</item>
+        <item>Demolitionist</item>
+        <item>Bypasser</item>
+        <item>Slicer</item>
+    </string-array>
+    <string-array name="soldier">
+        <item>Brawny</item>
+        <item>Threatening</item>
+        <item>Charmer</item>
+        <item>Ace Pilot</item>
+        <item>Entertainer</item>
+        <item>Linguist</item>
+        <item>Weapon Expert</item>
+        <item>Healer</item>
+    </string-array>
+    <string-array name="spacer">
+        <item>Empathic</item>
+        <item>Investigator</item>
+        <item>Ace Pilot</item>
+        <item>Techie</item>
+        <item>Gourmand</item>
+        <item>Genius Mechanic</item>
+        <item>Entertainer</item>
+        <item>Inspiring Leader</item>
+    </string-array>
 </resources>
