@@ -1,11 +1,14 @@
 package com.example.sw5ecompanion.models.equipment.armor.shield;
 
-public class LightShieldGenerator extends Shield {
+import com.example.sw5ecompanion.models.equipment.armor.Armor;
+
+public class LightShieldGenerator extends Armor {
 
     public LightShieldGenerator() {
 
         super();
         this.setName("Light Shield Generator");
+        this.setType("Light Armor");
         this.setCost(125);
         this.setWeight(2);
         this.setArmor(1);

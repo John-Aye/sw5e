@@ -7,6 +7,6 @@ public class SimpleBlaster extends Weapon {
     public SimpleBlaster() {
 
         super();
-        this.setType("Simple Blaster");
+        this.setType("Simple Blasters");
     }
 }

@@ -1,11 +1,14 @@
 package com.example.sw5ecompanion.models.equipment.armor.shield;
 
-public class LightPhysicalShield extends Shield {
+import com.example.sw5ecompanion.models.equipment.armor.Armor;
+
+public class LightPhysicalShield extends Armor {
 
     public LightPhysicalShield() {
 
         super();
         this.setName("Light Physical Shield");
+        this.setType("Light Armor");
         this.setCost(50);
         this.setWeight(6);
         this.setArmor(1);
