@@ -1,0 +1,12 @@
+{
+  "name" : "Berserker",
+  "dieSize" : 12,
+  "archetypeSelection" : 3,
+  "archetypeLevels" : [3, 6, 10, 14],
+  "skillAmount" : 2,
+  "weapons" : ["Simple Blaster", "Simple Vibroweapons", "Martial Vibroweapons"],
+  "armor" : ["Light Armor", "Medium Armor"],
+  "tools" : [],
+  "skillList": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+  "SavingThrows" : ["Strength", "Constitution"]
+}

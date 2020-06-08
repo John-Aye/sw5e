@@ -7,6 +7,6 @@ public class MartialBlaster extends Weapon {
     public MartialBlaster() {
 
         super();
-        this.setType("Martial Blaster");
+        this.setType("Martial Blasters");
     }
 }

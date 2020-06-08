@@ -7,6 +7,6 @@ public class MartialVibroweapons extends Weapon {
     public MartialVibroweapons() {
 
         super();
-        this.setType("Martial Vibroweapon");
+        this.setType("Martial Vibroweapons");
     }
 }
