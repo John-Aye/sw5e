@@ -123,6 +123,7 @@ public class BasicCreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 spin.start();
+                startRandom(savedInstanceState);
             }
         });
 
@@ -216,6 +217,13 @@ public class BasicCreateActivity extends AppCompatActivity {
     public void startManual(Bundle savedInstanceState) {
 
         Intent intent = new Intent(this, ManualStatActivity.class);
+        intent.putExtra("character", mCharacter);
+        startActivity(intent);
+    }
+
+    public void startRandom(Bundle savedInstanceState) {
+
+        Intent intent = new Intent(this, RandomStatActivity.class);
         intent.putExtra("character", mCharacter);
         startActivity(intent);
     }

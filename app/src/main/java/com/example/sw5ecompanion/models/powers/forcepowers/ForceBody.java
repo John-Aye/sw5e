@@ -1,8 +1,10 @@
+package com.example.sw5ecompanion.models.powers.forcepowers;
+
 import com.example.sw5ecompanion.models.powers.Power;
 
 public class ForceBody extends Power
 {
-    public ForceBlindDeafen() {
+    public ForceBody() {
         super();
         this.setLvl(1);
         this.setName("Force Body");

@@ -1,3 +1,5 @@
+package com.example.sw5ecompanion.models.powers.techpowers;
+
 import com.example.sw5ecompanion.models.powers.Power;
 
 public class DetectInvisibility extends Power
@@ -9,7 +11,7 @@ public class DetectInvisibility extends Power
         this.setType("2nd-level tech power");
         this.setDescription("For the duration, you see invisible creatures and objects as if they were visible.");
         this.setPrerequiste("");
-        this.setCastingTime("1 action")
+        this.setCastingTime("1 action");
         this.setRange("Self");
         this.setDuration("1 hour");
     }

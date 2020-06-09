@@ -18,6 +18,9 @@
     <string name="charisma">Charisma</string>
     <string name="stat">Stats</string>
     <string name="create">Create Character</string>
+    <string name="reroll">Reroll</string>
+    <string name="buy">Buy Gear</string>
+    <string name="pick">Pick gear</string>
     <string-array name="classes">
         <item>Berserker</item>
         <item>Consular</item>
@@ -214,4 +217,13 @@
         <item>Entertainer</item>
         <item>Inspiring Leader</item>
     </string-array>
+    <string name="title_activity_random_stat">RandomStatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

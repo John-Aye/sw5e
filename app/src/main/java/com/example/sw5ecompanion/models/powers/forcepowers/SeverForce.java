@@ -1,3 +1,5 @@
+package com.example.sw5ecompanion.models.powers.forcepowers;
+
 import com.example.sw5ecompanion.models.powers.Power;
 
 public class SeverForce extends Power

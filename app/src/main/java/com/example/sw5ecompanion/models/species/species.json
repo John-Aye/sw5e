@@ -1,5 +1,4 @@
-[
-  {
+ {
     "species" : "Bith",
     "skin" : [
       "Green",
@@ -15,10 +14,7 @@
     ],
     "distinctions" : [
       "Large cranium",
-      "Detail Oriented. You are practiced at scouring for details. You have advantage on Intelligence (Investigation) checks within 5 feet.",
-      "Keen Hearing and Smell. You have advantage on Wisdom (Perception) checks that involve hearing or smell.",
-      "Musician. You are proficient in one musical instrument of your choice.",
-      "Programmer. Whenever you make an Intelligence (Technology) check related to computers, you are considered to have expertise in the Technology skill."
+      "Acute sense of smell and hearing"
     ],
     "maxHeight" : 57,
     "minHeight" : 69,
@@ -39,7 +35,16 @@
     "Intelligence" : 2,
     "Wisdom" : 0,
     "Constitution" : 0,
-    "Dexterity" : 1
+    "Dexterity" : 1,
+   "features" : [
+     ["Detail Oriented",
+       "You are practiced ar scouring for details.  You have advantage on Intelligence (Investiagation) checks within 5 feet"],
+     ["Keen Hearing and Smell",
+       "You have advantage on Wisdom (Perception) checks that involve hearing or smell"],
+     ["Musician",
+       "You are proficient in one musical instrument of your choice"],
+     ["Programmer",
+       "Whenever you make an Intelligence (Technology) check related to computers, you are considered to have expertise in the Technology skill"]
+   ]
   }
-]
 

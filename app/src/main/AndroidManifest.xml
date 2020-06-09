@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ManualStatActivity"></activity>
+        <activity android:name=".RandomStatActivity"></activity>
+        <activity android:name=".ManualStatActivity" />
         <activity android:name=".BasicCreateActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

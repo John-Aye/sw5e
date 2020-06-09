@@ -7,41 +7,56 @@
     android:background="@color/background"
     tools:context=".ManualStatActivity">
 
-    <EditText
+    <Spinner
+        android:id="@+id/intelligence"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/int_text"
+        app:layout_constraintTop_toBottomOf="@+id/stat_text" />
+
+    <Spinner
+        android:id="@+id/charisma"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cha_text"
+        app:layout_constraintTop_toBottomOf="@+id/wisdom" />
+
+    <Spinner
+        android:id="@+id/wisdom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/wis_text"
+        app:layout_constraintTop_toBottomOf="@+id/intelligence" />
+
+    <Spinner
         android:id="@+id/constitution"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginTop="59dp"
         app:layout_constraintStart_toEndOf="@+id/con_text"
         app:layout_constraintTop_toBottomOf="@+id/dexterity" />
 
-    <EditText
-        android:id="@+id/charisma"
-        android:layout_width="100dp"
+    <TextView
+        android:id="@+id/stat_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/cha_text"
-        app:layout_constraintTop_toBottomOf="@+id/dexterity" />
-
-    <EditText
-        android:id="@+id/wisdom"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/wis_text"
-        app:layout_constraintTop_toBottomOf="@+id/strength" />
+        android:layout_marginTop="24dp"
+        android:text="@string/stat"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/str_text"
@@ -109,62 +124,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wis_text" />
 
-    <TextView
-        android:id="@+id/stat_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/stat"
-        android:textSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
+    <Spinner
         android:id="@+id/strength"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toEndOf="@+id/str_text"
         app:layout_constraintTop_toBottomOf="@+id/stat_text" />
 
-    <EditText
+    <Spinner
         android:id="@+id/dexterity"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginTop="59dp"
         app:layout_constraintStart_toEndOf="@+id/dex_text"
         app:layout_constraintTop_toBottomOf="@+id/strength" />
 
-    <EditText
-        android:id="@+id/intelligence"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/int_text"
-        app:layout_constraintTop_toBottomOf="@+id/stat_text" />
-
     <Button
-        android:id="@+id/create"
+        android:id="@+id/reroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/create"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/rounded_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/reroll"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constitution" />
+
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/pick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charisma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

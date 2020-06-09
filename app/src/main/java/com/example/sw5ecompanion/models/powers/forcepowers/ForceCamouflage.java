@@ -1,8 +1,10 @@
+package com.example.sw5ecompanion.models.powers.forcepowers;
+
 import com.example.sw5ecompanion.models.powers.Power;
 
 public class ForceCamouflage extends Power
 {
-    public ForceBreach() {
+    public ForceCamouflage() {
         super();
         this.setLvl(2);
         this.setName("Force Breach");
