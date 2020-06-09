@@ -217,6 +217,16 @@
         <item>Entertainer</item>
         <item>Inspiring Leader</item>
     </string-array>
+    <string-array name="point">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
     <string name="title_activity_random_stat">RandomStatActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
